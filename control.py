@@ -13,7 +13,7 @@ while True:
 	try:
 		response = urllib2.urlopen(url)
 		data = json.load(response)   
-		print data
+		#print data
 
 		last_10s=int(str(data['rows'][0]['last_10s']))
 		last_mn=int(str(data['rows'][0]['last_mn']))
